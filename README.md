@@ -12,4 +12,4 @@ Ich habe mich dazu entschieden bei der SPA eine Webseite zu erstellen. Die Webse
 ![image](https://user-images.githubusercontent.com/100712082/216540240-e09aa04a-dce9-4e7b-90e5-71dd87d25936.png)
 
 ## Links
-Farbpalette: ![AdobeColor-SPA](https://user-images.githubusercontent.com/100712082/216541293-bb570d31-208c-4c2c-bbda-ddc0c9c57c8b.jpeg)
+Farbpalette: [![AdobeColor-SPA](https://user-images.githubusercontent.com/100712082/216541293-bb570d31-208c-4c2c-bbda-ddc0c9c57c8b.jpeg)](https://color.adobe.com/SPA-color-theme-21300869/ #AdobeColor #AdobeColorThemes )
