@@ -13,3 +13,4 @@ Ich habe mich dazu entschieden bei der SPA eine Webseite zu erstellen. Die Webse
 
 ## Links
 Farbpalette: https://color.adobe.com/SPA-color-theme-21300869
+Website: **Coming soon!**
