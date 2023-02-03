@@ -12,5 +12,5 @@ Ich habe mich dazu entschieden bei der SPA eine Webseite zu erstellen. Die Webse
 ![image](https://user-images.githubusercontent.com/100712082/216540240-e09aa04a-dce9-4e7b-90e5-71dd87d25936.png)
 
 ## Links
-Farbpalette: https://color.adobe.com/SPA-color-theme-21300869
+Farbpalette: https://color.adobe.com/SPA-color-theme-21300869 &nbsp
 Website: Coming soon!
