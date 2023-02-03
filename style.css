@@ -2,9 +2,9 @@ body {
   color: white;
   background-color: #23CEFA;
   font-family: sans-serif;
+  text-align: center;
 }
 h1 {
-  text-align: center;
   cursor: pointer;
 }
 
@@ -14,9 +14,8 @@ h1 {
 
 #main {
   font-size: larger;
-  text-align: center;
 }
 
 #footer {
-  text-align: center;
+  cursor: pointer;
 }
