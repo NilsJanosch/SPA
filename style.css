@@ -8,6 +8,14 @@ h1 {
   cursor: pointer;
 }
 
+#header {
+  
+}
+
+#main {
+  font-size: larger;
+}
+
 #footer {
   text-align: center;
 }
