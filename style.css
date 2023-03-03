@@ -11,6 +11,8 @@ html {
 body {
   font-family: sans-serif;
   font-size: 1.6rem;
+  background-color: #222;
+  color: #fff;
 }
 
 section {
@@ -126,15 +128,58 @@ ul li {
 }
 
 a {
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #222;
+  color: #ddd;
   text-decoration: underline;
 }
 
 .loading .loader {
   display: flex;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+outline: none;
+box-shadow: 0px 0px 10px 2px #0077b6;
+}
+
+button[type="submit"] {
+background-color: #0077b6;
+color: #fff;
+border: none;
+border-radius: 0.5rem;
+padding: 1rem 2rem;
+font-size: 1.8rem;
+cursor: pointer;
+}
+
+button[type="submit"]:hover {
+background-color: #023e8a;
 }
