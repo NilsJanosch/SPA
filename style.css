@@ -242,3 +242,18 @@ font-size: 1.6rem;
 right: 0.5rem;
 }
 }
+button[type="submit"] {
+  background-color: #00a2ff;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #008fd0;
+}
+
