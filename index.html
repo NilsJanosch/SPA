@@ -14,9 +14,109 @@
     <div class="side top"></div>
     <div class="side bottom"></div>
 </div>
-
 <main>
-    <!-- Your main content goes here -->
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#pets">Haustiere</a></li>
+            <li><a href="#hobbies">Hobbys</a></li>
+            <li><a href="#interests">Interessen</a></li>
+            <li><a href="#future-plans">Zukunftspläne</a></li>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <div>
+            <h1>Titel</h1>
+            <p>Slogan</p>
+            <p>Leitendes Design</p>
+            <p>SPA Vorstellung (kleiner Text über meine SPA)</p>
+            <p>Nicht zu viel (übersichtlich wie z.B. https://www.nilsschlegel.pw)</p>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about">
+        <div>
+            <h2>About Me</h2>
+            <p>Text über mich</p>
+        </div>
+    </section>
+
+    <!-- Haustiere -->
+    <section id="pets">
+        <div>
+            <h2>Haustiere</h2>
+            <!-- Content here -->
+        </div>
+    </section>
+
+    <!-- Hobbys -->
+    <section id="hobbies">
+        <div>
+            <h2>Hobbys</h2>
+            <!-- Content here -->
+        </div>
+    </section>
+
+    <!-- Interessen -->
+    <section id="interests">
+        <div>
+            <h2>Interessen</h2>
+            <!-- Content here -->
+        </div>
+    </section>
+
+    <!-- Zukunftspläne -->
+    <section id="future-plans">
+        <div>
+            <h2>Zukunftspläne</h2>
+            <!-- Content here -->
+        </div>
+    </section>
+
+    <!-- Projekte -->
+    <section id="projects">
+        <div>
+            <h2>Projekte</h2>
+            <p>Kleine Vorstellung (Interessen & Motivation)</p>
+            <ul>
+                <li><a href="#">GitHub Link 1</a> - JavaScript Projekt 1 (FlappyBird)</li>
+                <li><a href="#">GitHub Link 2</a> - JavaScript Projekt 2 (Taschenrechner)</li>
+                <!-- Add more projects as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact">
+        <div>
+            <h2>Kontakt</h2>
+            <form action="send-message.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone"><br>
+                <input type="submit" value="Send">
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Nils Schlegel | SPA | 2023</p>
+    </footer>
+
 </main>
 <script src="script.js"></script>
 </body>
