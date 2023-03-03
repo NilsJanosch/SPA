@@ -9,6 +9,7 @@ nav {
 	background-color: #222222;
 	padding: 10px;
 	margin-bottom: 20px;
+	border-radius: 10px;
 }
 
 nav ul {
@@ -34,69 +35,92 @@ nav li a:hover {
 	background-color: #333333;
 }
 
-h1 {
+h2 {
 	color: #00BFFF;
-	font-size: 36px;
-	text-align: center;
+	font-size: 32px;
 	margin-bottom: 20px;
 }
 
 p {
 	font-size: 18px;
-line-height: 1.5;
-margin-bottom: 20px;
+	line-height: 1.5;
+	margin-bottom: 20px;
 }
 
 a {
-color: #23CEFA;
-text-decoration: none;
+	color: #23CEFA;
+	text-decoration: none;
 }
 
 a:hover {
-color: #00BFFF;
-text-decoration: underline;
+	color: #00BFFF;
+	text-decoration: underline;
 }
 
 button {
-background-color: #23CEFA;
-color: #0F0F0F;
-border: none;
-padding: 10px 20px;
-border-radius: 5px;
-cursor: pointer;
-font-size: 16px;
+	background-color: #23CEFA;
+	color: #0F0F0F;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
 }
 
 button:hover {
-background-color: #00BFFF;
-color: #E6E6E6;
+	background-color: #00BFFF;
+	color: #E6E6E6;
 }
 
 form {
-margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 input[type="text"], input[type="email"], textarea {
-width: 100%;
-padding: 12px;
-border: none;
-border-radius: 5px;
-background-color: #333333;
-color: #E6E6E6;
-resize: vertical;
+	width: 100%;
+	padding: 12px;
+	border: none;
+	border-radius: 5px;
+	background-color: #333333;
+	color: #E6E6E6;
+	resize: vertical;
 }
 
 input[type="submit"] {
-background-color: #23CEFA;
-color: #0F0F0F;
-border: none;
-padding: 10px 20px;
-border-radius: 5px;
-cursor: pointer;
-font-size: 16px;
+	background-color: #23CEFA;
+	color: #0F0F0F;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
 }
 
 input[type="submit"]:hover {
-background-color: #00BFFF;
-color: #E6E6E6;
+	background-color: #00BFFF;
+	color: #E6E6E6;
+}
+
+.cta {
+	background-color: #222222;
+	padding: 40px;
+	border-radius: 20px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.cta h2 {
+	font-size: 48px;
+	margin-top: 0;
+}
+
+.cta p {
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+
+.cta button {
+	font-size: 24px;
+	padding: 20px 40px;
+	border-radius: 50px;
 }
