@@ -1,23 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Meine Webseite</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<!-- Navbar -->
-	<nav>
-		<ul>
-			<li><a href="#">Startseite</a></li>
-			<li><a href="#">Über uns</a></li>
-			<li><a href="#">Kontakt</a></li>
-		</ul>
-	</nav>
+	<!-- Home -->
+	<section id="home">
+		<div class="loader">
+			<div class="spinner"></div>
+		</div>
+		<div class="content">
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#projects">Projekte</a></li>
+					<li><a href="#contact">Kontakt</a></li>
+				</ul>
+			</nav>
+			<h1>Willkommen auf meiner SPA</h1>
+			<p>Leitendes Design für eine übersichtliche Erfahrung</p>
+			<p>Entdecke meine Welt und lass uns gemeinsam etwas aufbauen!</p>
+		</div>
+	</section>
 
-	<!-- Inhalt -->
-	<h1>Willkommen auf unserer Webseite!</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac tellus at felis tempor aliquam. Donec eget neque dolor. Integer commodo sapien non risus efficitur ullamcorper. Nam tempor leo sit amet ligula laoreet, id venenatis lorem convallis. Sed commodo quis enim non elementum. Donec sed mauris ligula. Sed at efficitur augue. Aliquam ac arcu lectus. Nulla vel lacinia enim. In hac habitasse platea dictumst. Etiam auctor vestibulum purus, ut efficitur arcu lobortis sit amet. Sed vel semper metus. Morbi auctor velit justo, vel pulvinar sapien tincidunt et. Nullam vel enim ac nisl congue faucibus.</p>
+	<!-- About Me -->
+	<section id="about">
+		<div class="content">
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#projects">Projekte</a></li>
+					<li><a href="#contact">Kontakt</a></li>
+				</ul>
+			</nav>
+			<h2>Über mich</h2>
+			<p>Ich bin ein leidenschaftlicher Entwickler und Designer mit einem Faible für SPA-Designs. Meine Fähigkeiten umfassen JavaScript, HTML, CSS und andere Front-End-Technologien.</p>
+			<p>Ich bin bestrebt, mein Wissen ständig zu erweitern und neue Herausforderungen anzunehmen.</p>
+		</div>
+	</section>
 
-	<p>Praesent pulvinar euismod aliquet. Nullam vel mauris ac tellus vulputate euismod. Proin fringilla ante sit amet ante semper hendrerit. Sed euismod eget nisl vel malesuada. Duis tincidunt quam eu magna viverra, ac semper velit pulvinar. Sed sodales eget est in euismod. Praesent mattis metus nisl, vel tincidunt elit laoreet in. Donec eget odio tincidunt, pretium in lectus at, convallis felis. Etiam vel ex commodo, tincidunt neque ac, pretium turpis. Fusce semper molestie urna, eget commodo purus facilisis vel. Vivamus ultrices quam vel purus tincidunt, sit amet sagittis ipsum luctus. Fusce dignissim hendrerit mi, vel gravida ipsum aliquam eget. Ut rhoncus ex a lorem efficitur, at hendrerit augue volutpat. Nam dapibus nulla eu orci pharetra, eget consequat sapien euismod.</p>
+	<!-- Projekte -->
+	<section id="projects">
+		<div class="content">
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#projects">Projekte</a></li>
+					<li><a href="#contact">Kontakt</a></li>
+				</ul>
+			</nav>
+			<h2>Projekte</h2>
+			<p>Hier sind einige meiner JavaScript-Projekte:</p>
+			<ul>
+				<li><a href="#">Flappy Bird</a></li>
+				<li><a href="#">Taschenrechner</a></li>
+				<li><a href="#">ToDo-Liste</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- Kontakt -->
+	<section id="contact">
+		<div class="content">
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#projects">Projekte</a></li>
+					<li><a href="#contact">Kontakt</a></li>
+				</ul>
+			</nav>
+			<h2
+			<p>Kontaktieren Sie mich über das folgende Formular:</p>
+			<form action="#" method="POST">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">E-Mail:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="phone">Telefon:</label>
+				<input type="tel" id="phone" name="phone">
+				<label for="message">Nachricht:</label>
+				<textarea id="message" name="message" required></textarea>
+				<input type="submit" value="Senden">
+			</form>
+			<div class="success">
+				<p>Ihre Nachricht wurde erfolgreich gesendet!</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<p>&copy; Nils Schlegel | SPA | 2023</p>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="script.js"></script>
 </body>
 </html>
