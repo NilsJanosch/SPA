@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate form data (not shown for brevity)
 
     // Set email recipient and subject
-    $to = "your-email@example.com";
+    $to = "nils.schlegel@schulegossau.ch";
     $subject = "New message from your website";
 
     // Set email headers
