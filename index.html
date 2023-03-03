@@ -1,107 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Meine moderne Webseite</title>
+    <title>Loading Animation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script>
-    // Ladeanimation
-    window.addEventListener('load', function() {
-      const loader = document.querySelector('.loader');
-      loader.classList.add('loader-finished');
-    });
-  </script>
 </head>
 <body>
-<header>
-    <div class="logo">
-        <h1>Meine Website</h1>
-        <div class="cube-container">
-            <div class="cube">
-                <div class="cube-face cube-face-front"></div>
-                <div class="cube-face cube-face-back"></div>
-                <div class="cube-face cube-face-right"></div>
-                <div class="cube-face cube-face-left"></div>
-                <div class="cube-face cube-face-top"></div>
-                <div class="cube-face cube-face-bottom"></div>
-            </div>
-        </div> <!-- 3D cube -->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Haustiere</a></li>
-            <li><a href="#">Hobbys</a></li>
-            <li><a href="#">Interessen</a></li>
-            <li><a href="#">Zukunftspläne</a></li>
-            <li><a href="#">Projekte</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
-    </nav>
-    </div>
-</header>
-<div class="loader-wrapper">
-    <div class="loader">
-        <div class="bouncing-balls">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div> <!-- Ladeanimation -->
+<div class="cube">
+    <div class="side front"></div>
+    <div class="side back"></div>
+    <div class="side left"></div>
+    <div class="side right"></div>
+    <div class="side top"></div>
+    <div class="side bottom"></div>
 </div>
+
 <main>
-    <section id="about-me">
-        <h2>About me</h2>
-        <p>Hi, ich bin Max, ein Webentwickler aus Berlin. Meine Leidenschaft für Technologie hat mich dazu gebracht, mich auf die Erstellung von benutzerfreundlichen und skalierbaren Webanwendungen zu konzentrieren. Ich habe Erfahrung mit verschiedenen Technologien wie HTML, CSS, JavaScript, React und Node.js. Wenn ich nicht gerade am Computer sitze, verbringe ich meine Zeit gerne mit Reisen und der Erkundung neuer Orte.</p>
-    </section>
-    <section id="pets">
-        <h2>Haustiere</h2>
-        <p>Ich habe eine Katze namens Luna, die ich sehr liebe.</p>
-    </section>
-    <section id="hobbies">
-        <h2>Hobbys</h2>
-        <ul>
-            <li>Reisen</li>
-            <li>Lesen</li>
-            <li>Sport</li>
-        </ul>
-    </section>
-    <section id="interests">
-        <h2>Interessen</h2>
-        <ul>
-            <li>Technologie</li>
-            <li>Umweltschutz</li>
-            <li>Musik</li>
-        </ul>
-    </section>
-    <section id="future-plans">
-        <h2>Zukunftspläne</h2>
-        <ul>
-            <li>Weiterentwicklung meiner Fähigkeiten als Webentwickler</li>
-            <li>Teilnahme an interessanten Projekten</li>
-            <li>Reisen in ferne Länder</li>
-        </ul>
-    </section>
-    <section id="projects">
-        <h2>Projekte</h2>
-        <ul>
-            <li><a href="#">Mein Portfolio</a></li>
-            <li><a href="#">Ein Online-Shop für nachhaltige Produkte</a></li>
-            <li><a href="#">Ein Blog über Technologie und Umweltschutz</a></li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">E-Mail:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Nachricht:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <button type="submit">Abschicken</button>
-        </form>
-    </section>
+    <!-- Your main content goes here -->
 </main>
+<script src="script.js"></script>
 </body>
 </html>
