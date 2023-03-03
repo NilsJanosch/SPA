@@ -67,21 +67,19 @@
     </footer>
     <script src="main.js"></script>
   
-   <script>
+document.onreadystatechange = function() {
+  var state = document.readyState;
+  if (state == 'interactive') {
     // Display the loading animation
-    document.onreadystatechange = function() {
-      var state = document.readyState;
-      if (state == 'interactive') {
-        // Loading animation code goes here
-        document.querySelector('.loading-bar').style.display = 'flex';
-      } else if (state == 'complete') {
-        // Hide the loading animation when content is loaded
-        setTimeout(function(){
-          document.querySelector('.loading-bar').style.display = 'none';
-        },1000);
-      }
-    }
-  </script>
+    document.querySelector('.loading-bar').style.display = 'flex';
+  } else if (state == 'complete') {
+    // Hide the loading animation when content is loaded
+    setTimeout(function(){
+      document.querySelector('.loading-bar').style.display = 'none';
+    },1000);
+  }
+}
+
   </body>
 
 </html>
