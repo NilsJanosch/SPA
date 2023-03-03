@@ -195,38 +195,48 @@ margin-top: 5px;
 text-align: center;
 }
   
-  .loading {
-  display: flex;
+.loading-bar {
+  display: none;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 10px;
+  background-color: #232323;
 }
 
-.loading__bar {
-  height: 100px;
-  width: 20px;
-  margin: 0 10px;
+.loading-bar__bar {
+  width: 20%;
+  height: 100%;
+  margin: 0 5px;
   background-color: #00a2ff;
   animation: loading 1s ease-in-out infinite;
 }
 
-.loading__bar:nth-of-type(2) {
+.loading-bar__bar:nth-of-type(2) {
   animation-delay: 0.2s;
 }
 
-.loading__bar:nth-of-type(3) {
+.loading-bar__bar:nth-of-type(3) {
   animation-delay: 0.4s;
+}
+
+.loading-bar__bar:nth-of-type(4) {
+  animation-delay: 0.6s;
+}
+
+.loading-bar__bar:nth-of-type(5) {
+  animation-delay: 0.8s;
 }
 
 @keyframes loading {
   0% {
-    transform: scale(1);
+    transform: scaleX(0);
   }
   50% {
-    transform: scale(0.5);
+    transform: scaleX(1);
   }
   100% {
-    transform: scale(1);
+    transform: scaleX(0);
   }
 }
+
 
