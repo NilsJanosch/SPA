@@ -1,26 +1,21 @@
 /* Reset Styles */
-html {
+* {
   box-sizing: border-box;
-  font-size: 16px;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
+  background-color: #232323;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   line-height: 1.5;
-  color: #333;
 }
 
 /* Navigation Styles */
 nav {
-  background-color: #333;
+  background-color: #1d1d1d;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -42,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #f3c623;
+  color: #00a2ff;
 }
 
 /* Section Styles */
@@ -54,11 +49,12 @@ section {
 
 h1,
 h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
 p {
+  font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
@@ -120,25 +116,28 @@ form {
 label {
   display: block;
   margin-bottom: 5px;
+  font-size: 1.2rem;
 }
 
 input,
 textarea {
-  border: 2px solid #ccc;
+  border: none;
   border-radius: 5px;
+  background-color: #1d1d1d;
+  color: #fff;
   padding: 10px;
   margin-bottom: 20px;
-  transition: border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 input:focus,
 textarea:focus {
-  border-color: #f3c623;
+  background-color: #424242;
   outline: none;
 }
 
 input[type="submit"] {
-  background-color: #f3c623;
+  background-color: #00a2ff;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -149,35 +148,49 @@ input[type="submit"] {
 
 input[type="submit"]:hover,
 input[type="submit"]:focus {
-  background-color: #333;
-}
-
-input[type="submit"]:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
+  background-color: #1d1d1
 /* Footer Styles */
 footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
+background-color: #1d1d1d;
+color: #fff;
+text-align: center;
+padding: 20px;
 }
 
-/* Responsive
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
-nav {
-flex-direction: column;
-align-items: center;
+section {
+margin: 20px auto;
 }
 
-nav ul {
-flex-direction: column;
-align-items: center;
-}
-
-nav li {
+h1,
+h2 {
+font-size: 2rem;
 margin-bottom: 10px;
 }
+
+p {
+font-size: 1rem;
+margin-bottom: 10px;
+}
+
+input,
+textarea {
+margin-bottom: 10px;
+}
+}
+
+/* JavaScript Styles */
+.error {
+color: #ff4136;
+font-size: 1rem;
+margin-top: 5px;
+text-align: center;
+}
+
+.success {
+color: #2ecc40;
+font-size: 1rem;
+margin-top: 5px;
+text-align: center;
 }
