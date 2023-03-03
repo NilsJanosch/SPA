@@ -1,85 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Website Title</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-      <!-- Add the HTML code for the loading animation here -->
-  <div class="loading-bar">
-    <div class="loading-bar__bar"></div>
-    <div class="loading-bar__bar"></div>
-    <div class="loading-bar__bar"></div>
-    <div class="loading-bar__bar"></div>
-    <div class="loading-bar__bar"></div>
-  </div>
+<html>
+<head>
+    <title>Meine moderne Webseite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script>
+    // Ladeanimation
+    window.addEventListener('load', function() {
+      const loader = document.querySelector('.loader');
+      loader.classList.add('loader-finished');
+    });
+  </script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <div class="cube">
+            <div class="cube__face cube__face--front"></div>
+            <div class="cube__face cube__face--back"></div>
+            <div class="cube__face cube__face--right"></div>
+            <div class="cube__face cube__face--left"></div>
+            <div class="cube__face cube__face--top"></div>
+            <div class="cube__face cube__face--bottom"></div>
+        </div>
+ <!-- 3D-Würfel -->
+        <h1>Meine moderne Webseite</h1>
+    </div>
     <nav>
-      <ul>
-        <li><a href="#home">Home </a></li>
-        <li><a href="#about-me">AboutMe </a></li>
-        <li><a href="#projects">Projects </a></li>
-        <li><a href="#contact">Contact </a></li>
-      </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Haustiere</a></li>
+            <li><a href="#">Hobbys</a></li>
+            <li><a href="#">Interessen</a></li>
+            <li><a href="#">Zukunftspläne</a></li>
+            <li><a href="#">Projekte</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
     </nav>
-    <section id="home">
+</header>
+<div class="loader-wrapper">
+    <div class="loader">
+        <div class="bouncing-balls">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div> <!-- Ladeanimation -->
 </div>
-
-      <h1>Website Title</h1>
-      <p>Slogan Here</p>
-      <p>SPA Vorstellung (kleiner Text über meine SPA)</p>
-    </section>
+<main>
     <section id="about-me">
-      <h2>About Me</h2>
-      <p>Text about me here</p>
-      <ul>
-        <li>Haustiere</li>
-        <li>Hobbys</li>
-        <li>Interessen</li>
-        <li>Zukunftspläne</li>
-      </ul>
+        <h2>About me</h2>
+        <p>Hi, ich bin Max, ein Webentwickler aus Berlin. Meine Leidenschaft für Technologie hat mich dazu gebracht, mich auf die Erstellung von benutzerfreundlichen und skalierbaren Webanwendungen zu konzentrieren. Ich habe Erfahrung mit verschiedenen Technologien wie HTML, CSS, JavaScript, React und Node.js. Wenn ich nicht gerade am Computer sitze, verbringe ich meine Zeit gerne mit Reisen und der Erkundung neuer Orte.</p>
+    </section>
+    <section id="pets">
+        <h2>Haustiere</h2>
+        <p>Ich habe eine Katze namens Luna, die ich sehr liebe.</p>
+    </section>
+    <section id="hobbies">
+        <h2>Hobbys</h2>
+        <ul>
+            <li>Reisen</li>
+            <li>Lesen</li>
+            <li>Sport</li>
+        </ul>
+    </section>
+    <section id="interests">
+        <h2>Interessen</h2>
+        <ul>
+            <li>Technologie</li>
+            <li>Umweltschutz</li>
+            <li>Musik</li>
+        </ul>
+    </section>
+    <section id="future-plans">
+        <h2>Zukunftspläne</h2>
+        <ul>
+            <li>Weiterentwicklung meiner Fähigkeiten als Webentwickler</li>
+            <li>Teilnahme an interessanten Projekten</li>
+            <li>Reisen in ferne Länder</li>
+        </ul>
     </section>
     <section id="projects">
-      <h2>Projects</h2>
-      <p>Text about projects here</p>
-      <ul>
-        <li><a href="#">GitHub Link 1</a></li>
-        <li><a href="#">GitHub Link 2</a></li>
-      </ul>
+        <h2>Projekte</h2>
+        <ul>
+            <li><a href="#">Mein Portfolio</a></li>
+            <li><a href="#">Ein Online-Shop für nachhaltige Produkte</a></li>
+            <li><a href="#">Ein Blog über Technologie und Umweltschutz</a></li>
+        </ul>
     </section>
     <section id="contact">
-      <h2>Contact</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" />
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" />
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
-        <input type="submit" value="Send" />
-      </form>
+        <h2>Kontakt</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Abschicken</button>
+        </form>
     </section>
-    <footer>
-      <p>&copy; Your Name | SPA | 2023</p>
-    </footer>
-    <script src="main.js"></script>
-  <script>
-document.onreadystatechange = function() {
-  var state = document.readyState;
-  if (state == 'interactive') {
-    // Display the loading animation
-    document.querySelector('.loading-bar').style.display = 'flex';
-  } else if (state == 'complete') {
-    // Hide the loading animation when content is loaded
-    setTimeout(function(){
-      document.querySelector('.loading-bar').style.display = 'none';
-    },1000);
-  }
-}
-  </script>
-  </body>
-
+</main>
+</body>
 </html>
